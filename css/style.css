@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     font-family: sans-serif;
     width: 100%;
     height: 100vh;
@@ -15,81 +15,95 @@
     gap: 3rem;
 }
 
-h1{
+h1 {
     font-size: 2.4rem;
     font-weight: 700;
 
 }
 
-.color1{
+.color1 {
     color: #D61355
 }
-.color2{
+
+.color2 {
     color: #F94A29
 }
-.color3{
+
+.color3 {
     color: #FCE22A
 }
-.color4{
+
+.color4 {
     color: #184D47
 }
-.color5{
+
+.color5 {
     color: #30E3DF
 }
-.color6{
-    color:  #590696
+
+.color6 {
+    color: #590696
 }
 
-.rain{
+.rain {
     margin: 0 -4px;
 }
 
-.btn{
+.btn {
+    width: 8rem;
+    height: 3rem;
     border: 0;
     background-color: #333;
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
 
 }
 
-.btn{
-    animation:change-bg 5s linear infinite;
+button:nth-of-type(1):hover {
+    animation: change-bg 1s linear infinite;
+    background-image: linear-gradient(90deg, #30E3DF 0%, #FCE22A 51%, #F94A29 70%, #30E3DF 100%);
 }
 
-.btn.btn-1:hover{
-    animation:change-bg 5s linear infinite;
-    background-image: linear-gradient(90deg,#30E3DF 0%,#FCE22A 51%,#F94A29 70%, #30E3DF 100%);
+button:nth-of-type(2):hover {
+    animation: change-bg 1s linear infinite;
+    background-image: linear-gradient(to right, #D61355, #F94A29, #FCE22A, #184D47, #30E3DF, #590696, #D61355);
 }
 
-.btn.btn-2:hover{
-    background-image: linear-gradient(to right, #D61355, #F94A29, #FCE22A, #184D47, #30E3DF,#590696, #D61355);
-}
-
-.btn.btn-3:hover{
+button:nth-of-type(3):hover {
+    animation: change-bg 1s linear infinite;
     background-image: linear-gradient(to right, #D61355, #F94A29, #FCE22A, #184D47, #30E3DF, #D61355, #F94A29);
 }
 
-.btn.btn-4:hover{
-    background-image:linear-gradient(to right, #D61355, #F94A29, #FCE22A, #184D47, #30E3DF, #732982);
+button:nth-of-type(4):hover {
+    animation: change-bg 1s linear infinite;
+    background-image: linear-gradient(to right, #D61355, #F94A29, #FCE22A, #184D47, #30E3DF, #732982);
 }
 
 
-.btn.btn-5:hover{
-    background-image:linear-gradient(to right, #D61355, #D61355 16.65%, #F94A29 16.65%, #F94A29 33.3%,
-    #FCE22A 33.3%, #FCE22A 49.95%, #184D47 49.95%, #184D47 66.6%, #30E3DF 66.6%, #30E3DF 83.25%, #732982 83.25%, #732982 100%, #E7484F 100%);
+
+
+button:nth-of-type(5):hover {
+    animation: change-bg 1s linear infinite;
+    background-image: linear-gradient(to right, #D61355, #D61355 16.65%, #F94A29 16.65%, #F94A29 33.3%,
+            #FCE22A 33.3%, #FCE22A 49.95%, #184D47 49.95%, #184D47 66.6%, #30E3DF 66.6%, #30E3DF 83.25%, #732982 83.25%, #732982 100%, #E7484F 100%);
 }
 
 
 @keyframes change-bg {
+
+    from {
+        background-position: 0px;
+    }
+
     to {
-        background-position:18vw;
+        background-position: 8rem;
     }
 }
 
 
-.follow{
+.follow {
     text-decoration: none;
-    color:#000;
+    color: #000;
 }
